@@ -12,7 +12,7 @@ import android.widget.Chronometer;
 public class MainActivity extends AppCompatActivity implements OnClickListener {
 
     static final String TIME_START = "start time";
-    static final String TIME_STOP = "stop";
+    static final String TIME_STOP = "stop time";
     static final String BOOLEAN_CHRONO = "is running";
     boolean bool_start = false;
     CharSequence timeStop = "00:00";
