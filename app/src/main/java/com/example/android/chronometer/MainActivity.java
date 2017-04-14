@@ -84,11 +84,10 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
 
             //if chronometer is not running,
             //show the last time stamp (stored in TIME_STOP)
-            //and "pass it on" to the next saved state
+            //and update "timeStop"
             chronometer = (Chronometer) findViewById(R.id.chronometer);
             timeStop = savedInstanceState.getCharSequence(TIME_STOP);
             chronometer.setText(timeStop);
-            savedInstanceState.putCharSequence(TIME_STOP, timeStop);
         }
 
         super.onRestoreInstanceState(savedInstanceState);
